@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./App";
 
-const mount = (el) => {
-  ReactDOM.render(<h1>Hi There!</h1>, el);
-};
+const mount = (el) => ReactDOM.render(<App />, el);
 
 if (process.env.NODE_ENV === "development") {
   const devRoot = document.querySelector("#marketing-dev-root");
